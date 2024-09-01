@@ -1,0 +1,119 @@
+
+
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #141414; /* Dark background similar to Netflix */
+    color: #e5e5e5; /* Light grey text for contrast */
+}
+
+/* Form Container Styles */
+.form-container {
+    background: #333; /* Darker grey background for the form */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 600px; /* Maximum width for the form */
+    box-sizing: border-box;
+    margin: 0 auto;
+    overflow-y: auto; /* Allow vertical scrolling if needed */
+    height: calc(100vh - 40px); /* Adjust height based on viewport height */
+}
+
+/* Header Styles */
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 24px; /* Font size for the title */
+    color: #e50914; /* Netflix red */
+    margin: 0;
+}
+
+.header p {
+    font-size: 16px;
+    color: #e5e5e5; /* Light grey text */
+    margin-top: 5px;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Form Group Styles */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #e5e5e5; /* Light grey text */
+}
+
+/* Input Styles */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #555; /* Dark border color */
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background: #444; /* Dark background for inputs */
+    color: #e5e5e5; /* Light text color */
+}
+
+/* Radio and Checkbox Styles */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+/* Submit Button Styles */
+.submit-container {
+    text-align: center;
+}
+
+input[type="submit"] {
+    background: #e50914; /* Netflix red */
+    color: #fff; /* White text */
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background: #d40812; /* Slightly darker red on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 20px; /* Adjusted font size for smaller screens */
+    }
+
+    .header p {
+        font-size: 14px;
+    }
+}
+

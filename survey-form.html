@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Survey</title>
+    <link rel="stylesheet" href="survey-form.css">
+</head>
+<body>
+    <div class="form-container">
+        <header class="header">
+            <h1 id="title">Let's Talk About Movies!</h1>
+            <p id="description">Share a bit about the types of movies you enjoy watching :)</p>
+        </header>
+
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name:</label>
+                <input id="name" type="text" placeholder="Enter your name" value="Alexia" required>
+            </div>
+
+            <div class="form-group">
+                <label id="email-label" for="email">Email:</label>
+                <input id="email" type="email" placeholder="Enter your email" value="alexia@gmail.com" required>
+            </div>
+
+            <div class="form-group">
+                <label id="number-label" for="number">Age:</label>
+                <input id="number" type="number" min="1" max="100" placeholder="Enter your age" value="29" required>
+            </div>
+
+            <div class="form-group">
+                <label for="dropdown">Choose your favorite movie genre:</label>
+                <select id="dropdown" name="options">
+                    <option value="option1">Action</option>
+                    <option value="option2">Adventure</option>
+                    <option value="option3">Comedy</option>
+                    <option value="option4">Drama</option>
+                    <option value="option5">Horror</option>
+                    <option value="option6">Romance</option>
+                    <option value="option7">Science Fiction</option>
+                    <option value="option8">Fantasy</option>
+                    <option value="option9">Historical</option>
+                    <option value="option10">Crime</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>Do you prefer dubbed or subtitled films?</p>
+                <label>
+                    <input type="radio" name="option" value="option1" id="radio1">
+                    Dubbed
+                </label>
+                <label>
+                    <input type="radio" name="option" value="option2" id="radio2">
+                    Subtitled
+                </label>
+            </div>
+
+            <div class="form-group">
+                <p>Who introduced you to the genre of movies you watch most frequently?</p>
+                <label>
+                    <input type="checkbox" id="checkbox1" name="option1" value="option1">
+                    Mother/Father
+                </label>
+                <label>
+                    <input type="checkbox" id="checkbox2" name="option2" value="option2">
+                    Uncle/Aunt
+                </label>
+                <label>
+                    <input type="checkbox" id="checkbox3" name="option3" value="option3">
+                    Grandfather/Grandmother
+                </label>
+                <label>
+                    <input type="checkbox" id="checkbox4" name="option4" value="option4">
+                    Friend
+                </label>
+                <label>
+                    <input type="checkbox" id="checkbox5" name="option5" value="option5">
+                    Myself
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label for="feedback">Your favorite movie of all time:</label>
+                <textarea id="feedback" name="feedback" rows="4" placeholder=" Enter its name here"></textarea>
+            </div>
+
+            <div class="submit-container">
+                <input type="submit" id="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
